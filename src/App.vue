@@ -1,25 +1,39 @@
 <template>
-  <Home/>
+  <div id="app">
+    <Navbar></Navbar>
+    <div id="content">
+      <router-view></router-view>
+    </div>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
-
+import Navbar from './components/navbar/navbar.vue';
+import Footer from './components/footer/footer.vue';
+  
 export default {
   name: 'App',
   components: {
-    Home
+    Navbar,
+    Footer,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#content {
+  width: 60%;
+  height: 100%;
+  margin: 20px auto;
 }
 </style>
