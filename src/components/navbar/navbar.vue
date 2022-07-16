@@ -2,15 +2,9 @@
     <div id="navbar">
         <h1>mattoquébec</h1>
         <div id="menu">
-            <div>
-                <router-link to="/">Préface</router-link>
-            </div>
-            <div>
-                <router-link to="/preparatifs">Préparatifs</router-link>
-            </div>
-            <div>
-                <router-link to="/voyage">Voyage</router-link>
-            </div>
+            <router-link to="/">Préface</router-link>
+            <router-link to="/preparatifs">Préparatifs</router-link>
+            <router-link to="/voyage">Voyage</router-link>
         </div>
     </div>
 </template>
@@ -25,9 +19,10 @@ export default {
 #navbar {
     width: 100%;
     height: 90px;
-    background: rgba(0, 61, 165, 0.5);
+    background: linear-gradient(rgba(0, 61, 165, 0.5) 80%, #FFFFFF 20%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -36,23 +31,26 @@ h1 {
     font-style: italic;
     color: white;
     text-shadow: 3px 3px 0px #314E52;
+    padding: 5px 0;
 }
 
 #menu {
-    background-color: #D9D9D9;
     display: flex;
 }
 
-#menu div {
-    padding: 10px 30px;
-}
-
-#menu div:hover {
-    box-shadow: 0px 4px 0px #FF8A00;
-}
-
 #menu a {
+    background-color: #D9D9D9;
+    padding: 5px 30px;
+    transform: skewX(-10deg);
     text-decoration: none;
     color: #314E52;
+}
+
+#menu a.router-link-active {
+    box-shadow: 0px 4px 0px #314E52;
+}
+
+#menu a:hover {
+    box-shadow: 0px 4px 0px #FF8A00 !important;
 }
 </style>
