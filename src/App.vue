@@ -36,4 +36,10 @@ export default {
   height: 100%;
   margin: 20px auto;
 }
+
+@media (max-width: 600px) { 
+  #content {
+    width: 90%;
+  }
+}
 </style>

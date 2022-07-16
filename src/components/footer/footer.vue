@@ -24,5 +24,7 @@ p {
     font-weight: 400;
     color: white;
     font-size: .75rem;
+    text-align: center;
+    padding: 0 10px;
 }
 </style>

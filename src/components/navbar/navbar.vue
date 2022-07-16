@@ -35,13 +35,15 @@ h1 {
 }
 
 #menu {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    transform: skewX(-10deg);
 }
 
 #menu a {
     background-color: #D9D9D9;
     padding: 5px 30px;
-    transform: skewX(-10deg);
     text-decoration: none;
     color: #314E52;
 }
@@ -52,5 +54,13 @@ h1 {
 
 #menu a:hover {
     box-shadow: 0px 4px 0px #FF8A00 !important;
+}
+
+@media (max-width: 400px) { 
+  #menu {
+    transform: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 </style>
