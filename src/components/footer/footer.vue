@@ -13,7 +13,7 @@ export default {
 <style scoped>
 #footer {
     width: 100%;
-    height: 90px;
+    height: 50px;
     background: rgba(0, 61, 165, 0.5);
     display: flex;
     justify-content: center;

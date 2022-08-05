@@ -26,7 +26,6 @@ export default {
   font-family: 'Chakra Petch', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
